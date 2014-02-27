@@ -7,22 +7,28 @@ videogamena.me
 Works with at least python 2.7 and 3.3. Not tested with anything else.
 
 
-How to use
-==========
+Usage
+=====
 
 Uses 'video_game_names.txt' as the default list to generate names from.
 
-./vgng
-    - Will output 1 random name.
+    $ ./vgng.py -h
+    usage: vgng.py [-h] [-l LIST] [count]
+    
+    positional arguments:
+      count                 Number of names to create
+      
+    optional arguments:
+      -h, --help            show this help message and exit
+      -l LIST, --list LIST  Word list to use for generating names.
+    
+    $ ./vgng.py
+    <name>
 
-./vgng N
-    - Will output N number of names.
-
-./vgng -l <FILENAME> OR ./vgng --list <FILENAME>
-    - Will use FILENAME as the wordlist.
-
-./vgng -l <FILENAME> N
-    - Uses FILENAME as wordlist, outputs N names.
+    $ ./vgng 3
+    <name>
+    <name>
+    <name>
 
 
 Word List Syntax
